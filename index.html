@@ -14,6 +14,46 @@
     <script src="./js/app.js" defer></script>
 </head>
 <body>
-    
+    <h1>Text shadow generator</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-4 col-md-6">
+                <div class="card">
+                    <div class="card-header bg-primary">Settings:</div>
+                    <div class="card-body">
+                        <label for="font_size">Font size</label>
+                        <input type="range" id="font_size" class="custom-range" min="8" max="40" step="1" value="40"/>
+                        <label for="offset_x">Offset along x-axis</label>
+                        <input type="range" id="offset_x" class="custom-range" min="-15" max="15" step="1" value="4"/>
+                        <label for="offset_y">Offset along y-axis</label>
+                        <input type="range" id="offset_y" class="custom-range" min="-15" max="15" step="1" value="-1"/>
+                        <label for="blur">Blur</label>
+                        <input type="range" id="blur" class="custom-range" min="0" max="15" step="1" value="0"/>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-md-6">
+                <div class="card">
+                    <div class="card-header bg-primary">Color:</div>
+                    <div class="card-body">
+                        <input type="color" value="#ff0000">
+                        <label for="opacity">Opacity</label>
+                        <input type="range" id="opacity" class="custom-range" min="0" max="1" step="0.01" value="1"/>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-md-12">
+                <div class="card">
+                    <div class="card-header bg-primary">Result:</div>
+                    <div class="card-body">
+                        <label for="resultHex">Color in HEX</label>
+                        <textarea id="resultHex" rows="4" readonly></textarea><br/>
+                        <label for="resultRgba">Color in RGBA</label>
+                        <textarea id="resultRgba" rows="3" readonly></textarea><br/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
